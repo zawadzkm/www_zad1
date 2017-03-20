@@ -1,0 +1,150 @@
+html, body, div, p, g, dl, dt, dd, ol, ul, li,
+table, tbody, tfoot, thead, tr, th, td, footer, header, nav, section {
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+	vertical-align: baseline;
+}
+
+h1 {
+    color: navy;
+}
+
+h3 {
+    color: navy;
+}
+
+div#content {
+    width: 80%;
+    padding: 0 8% 2% 5%;
+}
+
+div#voting_sub {
+    min-width:500px;
+    overflow-x:auto;
+    padding: 20px;
+}
+
+div#voting_map {
+    width: 320px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+div#voting_stats {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+div#voting_cand {
+}
+
+div#candidate_tab {
+    width: 50%;
+    min-width:400px;
+    overflow-x:auto;
+    display: inline-block;
+    vertical-align: top;
+    display: inline-block;
+}
+div#candidate_chart {
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.map_area {
+    fill:#274ba7;
+}
+
+.map_area:hover {
+    fill:#6f87c4;
+}
+
+.div_tab {
+    display: table;
+}
+
+.div_row {
+    display: table-row;
+    height: 30px;
+}
+
+.div_col1 {
+    display: table-cell;
+}
+
+.div_col2 {
+    display: table-cell;
+    text-align: right;
+    width: 100px;
+}
+
+.voting_tab > thead > tr > th {
+    background-color: #f4f4f4;
+    font-size: 13px;
+    padding: 10px;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: left;
+}
+
+.voting_tab > tbody > tr > td {
+    font-size: 13px;
+    padding: 5px;
+    border-bottom: 1px solid #e1e1e1;
+    color: #000;
+}
+
+.cand_table {
+  border-spacing:0;
+  border-collapse: collapse;
+}
+
+.table-header-rotated th.row-header {
+  width: auto;
+}
+
+.table-header-rotated td {
+  font-size: 13px;
+  padding: 5px;
+  border-bottom: 1px solid #e1e1e1;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.table-header-rotated th.rotate-45 {
+  height: 140px;
+  width: 40px;
+  min-width: 40px;
+  max-width: 40px;
+  position: relative;
+  vertical-align: bottom;
+  padding: 0;
+  font-size: 12px;
+  line-height: 0.8;
+}
+
+.table-header-rotated th.rotate-45 > div {
+  position: relative;
+  top: 0px;
+  left: 70px;
+  height: 100%;
+  background-color: #f4f4f4;
+  transform:skew(-45deg,0deg);
+  overflow: hidden;
+}
+
+.table-header-rotated th.rotate-45 span {
+  transform:skew(45deg,0deg) rotate(315deg);
+  position: absolute;
+  bottom: 30px;
+  left: -25px;
+  display: inline-block;
+  width: 85px;
+  text-align: left;
+  white-space: nowrap;
+}

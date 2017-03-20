@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Wyniki wyborów prezydenckich 2000</title>
+  <link type="text/css" rel="stylesheet" href="../../css/styles.css" media="all"/>
+  <script type="text/javascript" src="../../js/gcharts.js"></script>
+  <script type="text/javascript" src="../../js/jquery-3.2.0.min.js"></script>
+</head>
+
+<body>
+<header>
+  <h1>Zestawienie wyników - gmina {{area.name}}</h1>
+</header>
+<nav>
+  Wróć do: <a href="../../index.html">Polska</a> &gt; <a href="../index.html">{{area.parent.parent.name}}</a> &gt; <a href="./index.html">{{area.parent.name}}</a>
+</nav>
+
+<div id="content">
+
+<section>
+    {% include "stats.html" %}
+</section>
+
+{% include "candidates.html" %}
+
+<section>
+  <h2>Wyniki głosowania w poszczególnych obwodach</h2>
+  <div id="voting_sub">
+  <table class="voting_tab">
+    <thead>
+      <tr>
+        <th>Numer obwodu</th>
+        <th>Adres</th>
+        <th>Liczba uprawnionych</th>
+        <th>Liczba kart wydanych</th>
+        <th>Liczba oddanych głosów</th>
+        <th>Głosy ważne</th>
+        <th>Głosy nieważne</th>
+        <th>Frekwencja (%)</th>
+      </tr>
+        </thead>
+        <tbody>
+        {% for i, row in area.data.iterrows() %}<tr>
+            <td>{{row["Nrobw"]}}</td>
+            <td>{{row["Adres"]}}</td>
+            <td>{{row["Uprawnieni"]}}</td>
+            <td>{{row["Wydanekarty"]}}</td>
+            <td>{{row["Oddane"]}}</td>
+            <td>{{row["Wazne"]}}</td>
+            <td>{{row["Niewazne"]}}</td>
+            <td>{{ "{0:.2f}".format(row["Frekwencja"])}}</td>
+        </tr>{% endfor %}
+      </tbody>
+	</table>
+  </div>
+</section>
+
+<section>
+  <h2>Wyniki głosowania na poszczególnych kandydatów</h2>
+  <div>
+  <table class="cand_table table-header-rotated">
+    <thead>
+      <tr>
+        <th></th>
+        <th class="rotate-45"><div><span>Dariusz Maciej GRABOWSKI</span></div></th>
+        <th class="rotate-45"><div><span>Piotr IKONOWICZ</span></div></th>
+        <th class="rotate-45"><div><span>Jarosław KALINOWSKI</span></div></th>
+        <th class="rotate-45"><div><span>Janusz KORWIN-MIKKE</span></div></th>
+        <th class="rotate-45"><div><span>Marian KRZAKLEWSKI</span></div></th>
+        <th class="rotate-45"><div><span>Aleksander KWAŚNIEWSKI</span></div></th>
+        <th class="rotate-45"><div><span>Andrzej LEPPER</span></div></th>
+        <th class="rotate-45"><div><span>Jan ŁOPUSZAŃSKI</span></div></th>
+        <th class="rotate-45"><div><span>Andrzej Marian OLECHOWSKI</span></div></th>
+        <th class="rotate-45"><div><span>Bogdan PAWŁOWSKI</span></div></th>
+        <th class="rotate-45"><div><span>Lech WAŁĘSA</span></div></th>
+        <th class="rotate-45"><div><span>Tadeusz Adam WILECKI</span></div></th>
+      </tr>
+        </thead>
+        <tbody>
+        {% for i, row in area.data.iterrows() %}<tr>
+            <td>{{row["Adres"]}}</td>
+		    <td>{{row["Dariusz Maciej GRABOWSKI"]}}</td>
+		    <td>{{row["Piotr IKONOWICZ"]}}</td>
+		    <td>{{row["Jarosław KALINOWSKI"]}}</td>
+		    <td>{{row["Janusz KORWIN-MIKKE"]}}</td>
+		    <td>{{row["Marian KRZAKLEWSKI"]}}</td>
+		    <td>{{row["Aleksander KWAŚNIEWSKI"]}}</td>
+		    <td>{{row["Andrzej LEPPER"]}}</td>
+		    <td>{{row["Jan ŁOPUSZAŃSKI"]}}</td>
+		    <td>{{row["Andrzej Marian OLECHOWSKI"]}}</td>
+		    <td>{{row["Bogdan PAWŁOWSKI"]}}</td>
+		    <td>{{row["Lech WAŁĘSA"]}}</td>
+		    <td>{{row["Tadeusz Adam WILECKI"]}}</td>
+        </tr>{% endfor %}
+      </tbody>
+	</table>
+  </div>
+</section>
+
+</div>
+
+</body>
+</html>

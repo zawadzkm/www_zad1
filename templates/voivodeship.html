@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Wyniki wyborów prezydenckich 2000</title>
+  <link type="text/css" rel="stylesheet" href="../css/styles.css" media="all"/>
+  <script type="text/javascript" src="../js/gcharts.js"></script>
+  <script type="text/javascript" src="../js/jquery-3.2.0.min.js"></script>
+</head>
+
+<body>
+<header>
+  <h1>Zestawienie wyników - województwo {{area.name}}</h1>
+</header>
+<nav>
+  Wróć do: <a href="../index.html">Polska</a>
+</nav>
+
+<div id="content">
+
+<section>
+    {% include "stats.html" %}
+</section>
+
+{% include "candidates.html" %}
+
+<section>
+  <h2>Wyniki głosowania w poszczególnych okręgach</h2>
+  <div id="voting_sub">
+  <table class="voting_tab">
+    <thead>
+      <tr>
+        <th>Numer okręgu</th>
+        <th>Nazwa okręgu</th>
+        <th>Liczba uprawnionych</th>
+        <th>Liczba kart wydanych</th>
+        <th>Liczba oddanych głosów</th>
+        <th>Głosy ważne</th>
+        <th>Głosy nieważne</th>
+        <th>Frekwencja (%)</th>
+      </tr>
+        </thead>
+        <tbody>
+        {% for row in area.subareas %}<tr>
+            <td><a href="{{row.get_url()}}">{{row.id}}</a></td>
+            <td><a href="{{row.get_url()}}">{{row.name}}</a></td>
+		    <td>{{row.entitled}}</td>
+		    <td>{{row.cards}}</td>
+		    <td>{{row.votes}}</td>
+		    <td>{{row.valid}}</td>
+		    <td>{{row.invalid}}</td>
+            <td>{{ "{0:.2f}".format(row.attendance)}}</td>
+        </tr>{% endfor %}
+      </tbody>
+	</table>
+  </div>
+</section>
+
+</div>
+
+</body>
+</html>
