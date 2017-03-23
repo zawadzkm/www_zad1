@@ -12,6 +12,3 @@ class Community(Area):
 
     def get_url(self):
         return self.get_output_name()
-
-    def render(self):
-        super().render()

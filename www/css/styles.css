@@ -55,6 +55,7 @@ div#candidate_chart {
     display: inline-block;
     vertical-align: top;
     display: inline-block;
+    padding-top: 30px;
 }
 
 .map_area {
