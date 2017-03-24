@@ -59,7 +59,7 @@ div#voting_cand {
 
 div#candidate_tab {
     width: 100%px;
-    max-width: 400px;
+    max-width: 600px;
     overflow-x:auto;
     display: inline-block;
     vertical-align: top;
