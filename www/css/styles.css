@@ -16,25 +16,23 @@ h3 {
 }
 
 div#content {
-    width: 80%;
     padding: 0 8% 2% 5%;
 }
 
 div#voting_sub {
-    min-width:500px;
+    width: 100%;
     overflow-x:auto;
-    padding: 20px;
+    padding: 15px;
 }
 
 div#voting_map {
-    width: 320px;
+    width: 350px;
     display: inline-block;
     text-align: left;
     vertical-align: top;
 }
 
 div#voting_stats {
-    width: 60%;
     display: inline-block;
     vertical-align: top;
 }
@@ -43,19 +41,20 @@ div#voting_cand {
 }
 
 div#candidate_tab {
-    width: 50%;
-    min-width:400px;
+    width: 100%px;
+    max-width: 400px;
     overflow-x:auto;
     display: inline-block;
     vertical-align: top;
     display: inline-block;
 }
 div#candidate_chart {
-    width: 450px;
+    max-width: 400px;
+    height: 200px;
     display: inline-block;
     vertical-align: top;
     display: inline-block;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .map_area {
@@ -84,6 +83,10 @@ div#candidate_chart {
     display: table-cell;
     text-align: right;
     width: 100px;
+}
+
+.voting_tab {
+    min-width: 320px;
 }
 
 .voting_tab > thead > tr > th {
