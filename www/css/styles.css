@@ -16,11 +16,12 @@ h3 {
 }
 
 div#content {
-    padding: 0 8% 2% 5%;
+   
 }
 
 div#voting_sub {
     width: 100%;
+    min-width: 300px;
     overflow-x:auto;
     padding: 15px;
 }
@@ -50,6 +51,7 @@ div#candidate_tab {
 }
 div#candidate_chart {
     max-width: 400px;
+    max-width: 300px;
     height: 200px;
     display: inline-block;
     vertical-align: top;
@@ -86,7 +88,7 @@ div#candidate_chart {
 }
 
 .voting_tab {
-    min-width: 320px;
+    min-width: 300px;
 }
 
 .voting_tab > thead > tr > th {
