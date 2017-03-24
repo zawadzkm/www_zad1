@@ -110,7 +110,7 @@ div#candidate_chart {
   border-collapse: collapse;
 }
 
-dix#comm_cand {
+div#comm_cand {
     width: 100%;
     min-width: 300px;
     overflow-x:auto;
