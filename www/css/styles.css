@@ -23,7 +23,7 @@ div#voting_sub {
     width: 100%;
     min-width: 300px;
     overflow-x:auto;
-    padding: 15px;
+    padding-top: 15px;
 }
 
 div#voting_map {
