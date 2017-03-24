@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0fa7fb9-2c0f-4031-b6ea-50aa904098ba" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/styles.css" afterPath="$PROJECT_DIR$/www/css/styles.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +44,7 @@
       <file leaf-file-name="candidates.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/candidates.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-340">
+            <state relative-caret-position="17">
               <caret line="1" column="57" lean-forward="false" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
               <folding />
             </state>
@@ -55,7 +54,7 @@
       <file leaf-file-name="country.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/country.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-748">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -75,7 +74,7 @@
       <file leaf-file-name="community.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/community.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
+            <state relative-caret-position="1037">
               <caret line="61" column="20" lean-forward="false" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
               <folding />
             </state>
@@ -97,8 +96,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="111" column="2" lean-forward="false" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="2" />
+            <state relative-caret-position="131">
+              <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -128,6 +127,7 @@
       <find>voting_s</find>
       <find>voting_su</find>
       <find>300</find>
+      <find>comm</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -797,22 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/country.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-748">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/candidates.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340">
-          <caret line="1" column="57" lean-forward="false" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/community.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -829,9 +813,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/candidates.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="57" lean-forward="false" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/country.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/community.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
+        <state relative-caret-position="1037">
           <caret line="61" column="20" lean-forward="false" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
           <folding />
         </state>
@@ -839,8 +839,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="111" column="2" lean-forward="false" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="2" />
+        <state relative-caret-position="131">
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
           <folding />
         </state>
       </provider>
