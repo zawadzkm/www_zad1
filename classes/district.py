@@ -1,5 +1,5 @@
 from classes.area import Area
-from classes.community import Community
+from classes.commune import Commune
 
 class District(Area):
 
@@ -13,7 +13,7 @@ class District(Area):
         comms = self.data.groupby(["Kodgminy", "Gmina"]).size()
 
         for i, val in comms.iteritems():
-            d = Community(i[0], i[1], self, self.data[self.data['Kodgminy'] == i[0]])
+            d = Commune(i[0], i[1], self, self.data[self.data['Kodgminy'] == i[0]])
             d.load()
             self.subareas.append(d)
 

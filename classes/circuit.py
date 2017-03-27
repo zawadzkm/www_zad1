@@ -1,6 +1,6 @@
 from classes.area import Area
 
-class Ambit(Area):
+class Circuit(Area):
 
     def __init__(self, id, name, parent, entitled, cards, votes, valid, invalid):
         self.id = id
